@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from './src/reducers';
 import { Header } from './src/components/common';
+import LibraryList from './src/components/LibraryList';
 
 export default class App extends React.Component {
   render() {
@@ -11,9 +12,7 @@ export default class App extends React.Component {
       <Provider store={createStore(reducers)} >
         <View style={styles.container}>
           <Header headerText="Tech Stack"></Header>
-          <Text>Open up App.js to start working on your app!</Text>
-          <Text>Changes you make will automatically reload.</Text>
-          <Text>Shake your phone to open the developer menu.</Text>
+          <LibraryList />
         </View>
      </Provider>
     );
