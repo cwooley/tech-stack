@@ -1,4 +1,4 @@
-export default (state = null, action) => {
+export default (state = 0, action) => {
   console.log("Hit reducer")
   switch(action.type){
     case 'select_library':
